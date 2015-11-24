@@ -25,3 +25,6 @@
 # It would be great to develop other modules to help analyze the data moving forward. 
 
 # Next Step: write the module that can take a known application address and properly soup this to an excel file
+
+Status Updates
+11/23/2015 - successfully got the program to access a static application and return the "prettified" soup. next step is to clean up the print and prep it to go to a CSV. I also am getting some https security warning from the urllib requests that should probably be addressed
