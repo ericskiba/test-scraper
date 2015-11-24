@@ -1,0 +1,25 @@
+# Initial outline for my DEP webscraper 
+
+# Step 1...there are only a finite number of possible applications to scrape, not all applications are going to have data (ie "No Boiler Record Found"). I should be able to test for this using Beautiful Soup. Each one has a particular format described as follows:
+
+# Application numbers take the form:
+# Cx####YY
+# Cx is a function of the year of initial application
+# CA: all applications before year 2000
+# CB: all applications 2000-2011, all C.O. applications 2012-present
+# CR: all registration applications 2012-present
+# CW: all initial work permits 2015-present
+# #### is an arbitrary 4 digit number from 1 to 9999
+# YY is the last to digits of the year of initial application
+
+#It would be awesome if the program would as you which years you want to get data for
+
+# The first module should access and screen each possible application number this seems to be done using the getDEPhtml module
+
+# Step 2 If the request returns other info the program should move to the next step which is to test the data, another option would be to just return a string right? This would mean I could rerun the program over different years, or is it better to store a database of application numbers for future reference? 
+
+# Step 3 Need to parse the data some how, it seems like the original repo did this pretty well and pulled all the info I'd be interested in
+
+# Step 4 Need to figure out a way to export this data to Excel (for now)
+
+# It would be great to develop other modules to help analyze the data moving forward. 
